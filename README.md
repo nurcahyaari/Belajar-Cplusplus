@@ -6,5 +6,5 @@
 
 
 
-#Apa itu C++s
+#Apa itu C++
 
