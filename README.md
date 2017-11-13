@@ -26,9 +26,17 @@ setiap File header memiliki memiliki fungsi dan kegunaan tertentu salah satunya 
 iostream adalah library standar untuk melakukan operasi input maupun output dalam program 
 yang kita tulis, salah satu sintak untuk melakukan input dan output adalah cin 
 dan cout dimana cin adalah sintak untuk melakukan input dari keyboard dan
-cout adalah sintak untuk mencetak kode program agar dapat tampil dilayar
+cout adalah sintak untuk mencetak kode program agar dapat tampil dilayar.
 
-using namespace std;
+    using namespace std;
+
+ untuk menggunakan standar library dari C++ maka kita harus menuliskan kode tersebut, karena jika tidak 
+ dituliskan maka program yang kita buat akan error.
+
+    int main(){
+
+    }
+
 
 
 
