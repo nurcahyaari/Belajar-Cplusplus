@@ -9,7 +9,10 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
     * [Komentar sebaris](#komentar-sebaris)
     * [komentar lebih dari 1 baris](#komentar-lebih-dari-sebaris)
 * [Kenalan dengan Tipe data dan Variabel yuk](#kenalan-dengan-tipe-data-dan-variabel-yuk)
+    * [Tipe Data](#tipe-data)
     * [Variabel](#variabel)
+    * [Assignment](#assignment)
+* [Berhitung Matematika di C++ yuk](#berhitung-matematika-di-c-yuk)
 
 
 ## Sintak Dasar
@@ -76,7 +79,7 @@ melakukan pemrograman bagaikan melakukan operasi matematika, dimana kita perlu m
 Tipe data apasih? dalam melakukan programming kita mungkin harus menulis sebuah Variabel, Konstanta, ataupun Fungsi. nah ketiga hal tersebut adalah contoh dimana kita membutuhkah tipe data. maksudnya adalah karena Variabel, Konstanta dan fungsi adalah sebuah data, jadi kita harus tau tipenya adalah apa.
 Tipe data sendiri juga merepresentasikan bilangan yang akan kita gunakan. mungkin kita harus menggunakan bilangan bulat, atau mungkin pecahan. nah tapi perlu diketahui juga kita tidak mungkin bisa menggunakan data berupa pecahan pada tipe data bilangan bulat. beberapa tipe data yang mungkin memang harus dihafal dan diketahui adalah int (untuk bilangan bulat), float (bilangan pecahan), dan bool (untuk data berupa pernyataan benar dan salah)
 
-<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/komentar.png" alt="alt text" alt="input output sederhana" title="Tabel tipe data">
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/tipe%20data.png" alt="alt text" alt="input output sederhana" title="Tabel tipe data">
 
 
 ### Variabel
@@ -87,12 +90,15 @@ contoh nyata variabel adalah :
 
 untuk mendeklarasikan variabel diperlukan beberapa syarat dimana
 - nama variabel tidak boleh diawali angka
+- nama variabel tidak boleh menggunakan angka
 - nama variabel tidak boleh menggunakan spasi
 - nama variabel tidak boleh sama dengan kata yang sudah ada dalam bahasa C++
+- nama variabel tidak boleh menggunakan simbol (contoh *, =, :, dll)
+- nama variabel di C++ bersifat Case-Sensitive, maksudnya adalah antara variabel nama dan variabel Nama adalah sesuatu yang berbeda, karena nama bukan kapital, sedangkan Nama adalah kapital
 
 cara pendeklarasian variabel adalah : 
 
-tipe_data nama_variabel;
+    tipe_data nama_variabel;
 
 contoh : 
 
@@ -102,6 +108,58 @@ contoh :
     float bilGanjil1;
     bool apakah_benar;
     char nama;
+
+    kita juga bisa mendeklarasikan variabel sebaris, contoh
+
+    int harga_sepeda, harga_motor, harga_mobil;
+
+screenshoot pendeklarasian variabel : 
+scrennshot ini adalah contoh salah dari pendeklarasian variabel
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/variabel%20error%201.png" alt="alt text" alt="input output sederhana" title="Error menamakan variabel">
+
+penjelasan : pada gambar tersebut terjadi error karena kita tidak bisa mendeklarasikan dengan model seperti itu. karena dengan memberi tipe data lagi pada variabel berarti kita telah menyelesaikan baris tersebut, jadi seharusnya kita bukan menggunakan ',' (koma) tetapi seharusnya ';' (titik koma)
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/variabel%20error%202.png" alt="alt text" alt="input output sederhana" title="Error menamakan variabel">
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/variabel%20error%203.png" alt="alt text" alt="input output sederhana" title="Error menamakan variabel">
+
+penjelasan : pada dua gambar diatas terjadi error karena salah dalam melakukan pemberian nama pada variabel, coba kalian lihat lagi syarat syarat dalam pemberian nama variabel kembali. disitu terlihat jelas kita tidak bisa melakukan penamaan menggunakan angka didepan ataupun spasi
+
+lalu bagaimana cara mendeklarasikan variabel dengan benar?
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/variabel%20sukses.png" alt="alt text" alt="input output sederhana" title="Penamaan variabel yang benar">
+
+terlihat ketika program dikompilasi tidak terjadi error sama sekali, karena penamaan variabel tersebut sudah sesuai aturannya
+
+### Konstanta
+Konstanta adalah nilai yang tidak dapat berubah dan sudah pasti. contoh konstanta yang jelas adalah nilai pi untuk menghitung linkaran, dimana pi selalu bernilai 3.14, tidak mungkin kan pi bernilai sesuka kita.
+
+cara pendeklarasian pi sangat mirip dengan variabel, perbedannya hanyalah konstanta diawali kata kunci const. untuk mendeklarasian konstanta seperti ini : 
+
+    const tipe_data nama_variabel;
+
+perbedaan antara konstanta dengan variabel adalah dimana variabel bisa kita gunakan tanpa perlu memberi nilai sedangkan konstanta tidak bisa
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/konstanta%20error.png" alt="alt text" alt="input output sederhana" title="Pendeklarasian konstanta yang salah">
+
+lalu bagaimana cara mendeklarasikan konstanta yang benar? yaitu dengan memberinya nilai atau [assignment](#assignment).
+
+berikut ini adalah cara mendeklarasikan konstanta dengan benar
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/deklarasi%20konstanta.png" alt="alt text" alt="input output sederhana" title="Pendeklarasian konstanta yang benar">
+
+
+### Assignment
+Assignment atau penugasan, adalah operator untuk memberikan nilai kepada variabel ataupun konstanta. cara untuk melakukan assignment atau penugasan adalah dengan menggunakan operator '=' (sama dengan)
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/assignment.gif" alt="alt text" alt="input output sederhana" title="Cara melakukan Pemberian nilai kepada variabel">
+
+
+## Berhitung Matematika di C++ yuk
+
+
+
 
 
 
