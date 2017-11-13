@@ -28,7 +28,7 @@ yang kita tulis, salah satu sintak untuk melakukan input dan output adalah cin
 dan cout dimana cin adalah sintak untuk melakukan input dari keyboard dan
 cout adalah sintak untuk mencetak kode program agar dapat tampil dilayar.
 
-<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/basic%20input%20output%20.gif" alt="alt text" width="480px" height="360px">
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/basic%20input%20output%20.gif" alt="alt text" width="510px" height="267px">
 
     using namespace std;
 
