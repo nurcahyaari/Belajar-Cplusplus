@@ -21,7 +21,7 @@ Penjelasan kode :
 
     #include<iostream> 
     
-    C++ melampirkan beberapa header dengan cara #include<file_header_yang_ingin_ditampilkan>.
+ C++ melampirkan beberapa header dengan cara #include<file_header_yang_ingin_ditampilkan>.
 setiap File header memiliki memiliki fungsi dan kegunaan tertentu salah satunya adalah iostream. 
 iostream adalah library standar untuk melakukan operasi input maupun output dalam program 
 yang kita tulis, salah satu sintak untuk melakukan input dan output adalah cin 
