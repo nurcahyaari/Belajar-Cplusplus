@@ -8,6 +8,8 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
 * [Komentarin Sourcenya yuk biar tidak bingung](#komentar)
     * [Komentar sebaris](#komentar-sebaris)
     * [komentar lebih dari 1 baris](#komentar-lebih-dari-sebaris)
+* [Kenalan dengan Tipe data dan Variabel yuk](#kenalan-dengan-tipe-data-dan-variabel-yuk)
+    * [Variabel](#variabel)
 
 
 ## Sintak Dasar
@@ -59,9 +61,51 @@ ketika kita hanya ingin mengomentari hanya satu baris program maka kita dapat me
 
 ### komentar lebih dari sebaris
 sedangkan ketika kita ingin mengomentari 2 baris atau 3 atau mungkin 10 baris kita juga bisa, untuk mengomentari lebih dari 10 baris caranya seperti ini
-    /* Nama saya Ari Nurcahya
-       Saya bingun mau nulis apa lagi
-       Saya suka kucing, dan juga suka Dia
-    */
-untuk komentar lebih dari 1 baris kita mulai dengna /* kemudian ditutup dengan */
+
+    /* Nama saya Ari Nurcahya,
+       Saya bingung mau nulis apa lagi
+       Saya suka kucing, dan juga suka Dia*/
+
+untuk komentar lebih dari 1 baris kita mulai dengna '/*' kemudian ditutup dengan '*/'
+
+## Kenalan dengan Tipe data dan Variabel yuk
+melakukan pemrograman bagaikan melakukan operasi matematika, dimana kita perlu memerlukan variabel.
+2x + 3 = 10 adalah salah satu contoh dimana kita memerlukan variabel yang bernama x, dan x sendiri bernilai 4. 2x + 3 = 10; 2 adalah koefisien, x adalah variabel + adalah operator penjumlahan dan 3 adalah konstantan. dalam pemrograman kita bisa menulisnya 2 * x + 3; karena pada hakikatnya bahasa pemrograman tidak mengenal yang namanya koefisien
+
+### Tipe Data
+Tipe data apasih? dalam melakukan programming kita mungkin harus menulis sebuah Variabel, Konstanta, ataupun Fungsi. nah ketiga hal tersebut adalah contoh dimana kita membutuhkah tipe data. maksudnya adalah karena Variabel, Konstanta dan fungsi adalah sebuah data, jadi kita harus tau tipenya adalah apa.
+Tipe data sendiri juga merepresentasikan bilangan yang akan kita gunakan. mungkin kita harus menggunakan bilangan bulat, atau mungkin pecahan. nah tapi perlu diketahui juga kita tidak mungkin bisa menggunakan data berupa pecahan pada tipe data bilangan bulat. beberapa tipe data yang mungkin memang harus dihafal dan diketahui adalah int (untuk bilangan bulat), float (bilangan pecahan), dan bool (untuk data berupa pernyataan benar dan salah)
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/komentar.png" alt="alt text" alt="input output sederhana" title="Tabel tipe data">
+
+
+### Variabel
+Variabel adalah suatu hal yang bisa berubah ubah dan belum pasti, jika dalam programming variabel bisa juga diartikan sebagai sebuah penampung data yang nilainya dapat berubah ubah sesuai kebutuhakn kita. 
+contoh nyata variabel adalah : 
+- 2x + 2; dimana x adalah variabel, dan dia mempengaruhi hasilnya
+- x = 2 + 2; x tersebut juga adalah variabel, dan x tersebut dicari nilainya
+
+untuk mendeklarasikan variabel diperlukan beberapa syarat dimana
+- nama variabel tidak boleh diawali angka
+- nama variabel tidak boleh menggunakan spasi
+- nama variabel tidak boleh sama dengan kata yang sudah ada dalam bahasa C++
+
+cara pendeklarasian variabel adalah : 
+
+tipe_data nama_variabel;
+
+contoh : 
+
+    int a;
+    int variabel;
+    float bilGanjil;
+    float bilGanjil1;
+    bool apakah_benar;
+    char nama;
+
+
+
+
+    
+
 
