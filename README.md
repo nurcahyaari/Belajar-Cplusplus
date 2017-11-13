@@ -19,10 +19,21 @@ Untuk menulis kode program dengan C++ ada sintak dasarnya, dimana sintak tersebu
 
 Penjelasan kode :
 
-    #include<iostream> C++ melampirkan beberapa header dengan cara #include<file_header yang ingin ditampilkan>. setiap File header memiliki memiliki fungsi dan kegunaan tertentu salah satunya adalah iostream. iostream adalah library standar untuk melakukan operasi input maupun output dalam program yang kita tulis, salah satu sintak untuk melakukan input dan output adalah cin dan cout dimana cin adalah sintak untuk melakukan input dari keyboard dan
+    #include<iostream> C++ melampirkan beberapa header dengan cara 
+    
+    #include<file_header yang ingin ditampilkan>. setiap File header memiliki 
+    
+    memiliki fungsi dan kegunaan tertentu salah satunya adalah iostream. iostream 
+    
+    adalah library standar untuk melakukan operasi input maupun output dalam program 
+    
+    yang kita tulis, salah satu sintak untuk melakukan input dan output adalah cin 
+    
+    dan cout dimana cin adalah sintak untuk melakukan input dari keyboard dan
+    
     cout adalah sintak untuk mencetak kode program agar dapat tampil dilayar
 
-    using namespace std;
+using namespace std;
 
 
 
