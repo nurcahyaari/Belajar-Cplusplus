@@ -36,7 +36,8 @@ cout adalah sintak untuk mencetak kode program agar dapat tampil dilayar.
     int main(){
 
     }
-
+ 
+terakhir adalah int main(), int main() sendiri adalah fungsi utama dalam program c++. setiap kode program yang ditulis akan dipanggil disini, jadi ketika program kalian jalankan maka semua baris yang ada di fungsi main inilah yang nantinya akan diproses, tetapi jika kalian menulis kode diluar main() dan tidak dipanggil didalam fungsi ini maka kode tersebut tidak akan diproses sama sekali
 
 
 
