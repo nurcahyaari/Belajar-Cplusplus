@@ -19,7 +19,8 @@ Untuk menulis kode program dengan C++ ada sintak dasarnya, dimana sintak tersebu
 
 Penjelasan kode :
 
-    #include<iostream> C++ melampirkan beberapa header dengan cara 
+    #include<iostream> 
+    C++ melampirkan beberapa header dengan cara 
     #include<file_header yang ingin ditampilkan>. setiap File header memiliki 
     memiliki fungsi dan kegunaan tertentu salah satunya adalah iostream. iostream 
     adalah library standar untuk melakukan operasi input maupun output dalam program 
