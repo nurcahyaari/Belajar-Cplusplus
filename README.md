@@ -29,7 +29,7 @@ dan cout dimana cin adalah sintak untuk melakukan input dari keyboard dan
 cout adalah sintak untuk mencetak kode program agar dapat tampil dilayar.
 berikut ini adalah contoh sederhana dari input dan output program paling sederhana : 
 
-<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/basic%20input%20output%20.gif" alt="alt text" width="510px" height="267px" alt="input output sederhana">
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/basic%20input%20output%20.gif" alt="alt text" width="510px" height="267px" alt="input output sederhana" title="input output sederhana">
 
     using namespace std;
 
