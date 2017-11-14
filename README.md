@@ -158,6 +158,21 @@ Assignment atau penugasan, adalah operator untuk memberikan nilai kepada variabe
 
 ## Berhitung Matematika di C++ yuk
 
+    2 + 2 = 4;
+    x + y;
+    1/2 * x * y;
+
+berikut diatas adalah salah contoh perhitungan matematika. perhitungan di dalam matematika sendiri sudah pasti ada nilai (operand), operasinya (operator) dan hasilnya. di dalam pemrograman pun kurang lebih seperti itu. 
+
+contoh kita mendapatkan persoalan menghitung jumlah uang kita sekarang (Rp. 50,000) dikurang harga makanan yang kita beli (Rp. 10,000), jajannya yang kita beli adalah inputan dari user. bagaimanakan penyelesaiannya?
+
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/hitung_sederhana-min.gif" alt="alt text" alt="input output sederhana" title="Penyelesaian">
+
+untuk penyelesaian kurang lebih seperti gambar gif diatas
+
+
+
 
 
 
