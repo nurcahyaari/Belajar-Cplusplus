@@ -13,6 +13,7 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
     * [Variabel](#variabel)
     * [Assignment](#assignment)
 * [Berhitung Matematika di C++ yuk](#berhitung-matematika-di-c-yuk)
+* [Mari kita kontrol program kita](#mari-kita-kontrol-program-kita)
 
 
 ## Sintak Dasar
@@ -198,6 +199,9 @@ penjelasan source code
 mengapa kita gunakan r, dan hasil bertipe float? ya betul sekali, karena hasil kemungkinan akan menampung nilai bertipe pecahan, dan r sebenarnya bisa menggunakan int tetapi agar lebih ringkas saja kita jadikan float
 
 dan pi kita jadikan const karena nilai pi sudah pasti dan tidak mungkin berubah
+
+
+## Mari kita kontrol program kita
 
 
 
