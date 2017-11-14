@@ -11,7 +11,7 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
 * [Kenalan dengan Tipe data dan Variabel yuk](#kenalan-dengan-tipe-data-dan-variabel-yuk)
     * [Tipe Data](#tipe-data)
     * [Variabel](#variabel)
-    * [Assignment](#assignment)
+    * [Operator Assignment](#operator-assignment)
 * [Berhitung Matematika di C++ yuk](#berhitung-matematika-di-c-yuk)
 * [Mari kita kontrol program kita](#mari-kita-kontrol-program-kita)
 
@@ -151,7 +151,7 @@ berikut ini adalah cara mendeklarasikan konstanta dengan benar
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/deklarasi%20konstanta.png" alt="alt text" alt="input output sederhana" width="632px" height="483px" title="Pendeklarasian konstanta yang benar">
 
 
-### Assignment
+### Operator Assignment
 Assignment atau penugasan, adalah operator untuk memberikan nilai kepada variabel ataupun konstanta. cara untuk melakukan assignment atau penugasan adalah dengan menggunakan operator '=' (sama dengan)
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/assignment.gif" alt="alt text" alt="input output sederhana" width="668px" height="546px" title="Cara melakukan Pemberian nilai kepada variabel">
@@ -200,8 +200,26 @@ mengapa kita gunakan r, dan hasil bertipe float? ya betul sekali, karena hasil k
 
 dan pi kita jadikan const karena nilai pi sudah pasti dan tidak mungkin berubah
 
+### Operator
+
 
 ## Mari kita kontrol program kita
+
+terkadang kita membutuhkan pemilihan keputusan di dalam program kita. jadi kita hanya butuh baris program ini saja yang diproses ketika kondisnya seperti ini, dan ketika kondisinya seperti itu maka kita akan memproses baris yang itu.
+
+nah dengan kemamumpuan untuk mengkontrol program kita dapat membuat program berjalan semestinya, lalu maksudnya mengontrol itu apa saya masih bingung?
+
+nah semisal kita akan mencetak 'saya suka dia' ketika nilai yang kita inputkan adalah bilangan ganjil saja, maka otomatis ketika nilai yang kita inputkan genap berarti tidak akan tampil apa apa di layar monitor kita.
+
+untuk melakukan pengontrolan dalam program kita dapat menggunakan if, if..else, maupun switch case
+
+### Kendalikan dengan If
+
+syntax if
+
+    if(kondisi){
+        // pernyataan
+    }
 
 
 
