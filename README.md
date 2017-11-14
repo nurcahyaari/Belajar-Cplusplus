@@ -1,3 +1,7 @@
+# Catatan
+Semua latihan sudah ada di folder source latihan, kalian bisa mencoba sendiri di komputer masing masing
+
+
 # Apa itu C++
 C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne Stroustrup pada tahun 1980 an di Bell Labs. Salah satu kelebihan bahasa C++ dibandingkan bahasa C adalah dukungan terhadap konsep PBO (Pemrograman Berorientasi Objek)
 
@@ -274,6 +278,9 @@ syntax if
         // pernyataan
     }
 
+dibawah ini adalah contoh program yang kita buat dengan "if", pada program dibawah ini akan mencetak "Nilai a lebih besar dari 10" jika nilai yang kita input lebih besar dari 10, dan program tidak akan mencetak apapun jika nilai yang kita input kurang dari 10
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/if.gif" alt="alt text" alt="If" title="Penyelesaian">
 
 
 
