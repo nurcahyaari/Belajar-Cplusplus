@@ -253,7 +253,7 @@ sama halnya dengan increment tetapi decrement akan melakukan penurunan nilai
 <b>Pre Decrement</b>
 sama halnya dengan increment tetapi decrement akan melakukan penurunan nilai
 
-<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/idecrement.png" alt="alt text" alt="Increment" title="Penyelesaian">
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/decrement.png" alt="alt text" alt="Increment" title="Penyelesaian">
 
 
 ## Mari kita kontrol program kita
