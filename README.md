@@ -164,10 +164,41 @@ Assignment atau penugasan, adalah operator untuk memberikan nilai kepada variabe
 
 berikut diatas adalah salah contoh perhitungan matematika. perhitungan di dalam matematika sendiri sudah pasti ada nilai (operand), operasinya (operator) dan hasilnya. di dalam pemrograman pun kurang lebih seperti itu. 
 
-contoh kita mendapatkan persoalan menghitung jumlah uang kita sekarang (Rp. 50,000) dikurang harga makanan yang kita beli (Rp. 10,000), jajannya yang kita beli adalah inputan dari user. bagaimanakan penyelesaiannya?
+contoh 1 
+kita mendapatkan persoalan menghitung jumlah uang kita sekarang (Rp. 50,000) dikurang harga makanan yang kita beli (Rp. 10,000), jajannya yang kita beli adalah inputan dari user. bagaimanakan penyelesaiannya?
 
 untuk penyelesaiannya seperti gambar dibawah ini
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/hitung_sederhana-min.gif" alt="alt text" alt="input output sederhana" title="Penyelesaian">
+
+
+contoh 2
+Menghitung luas lingkaran dengan jari jari sepanjan 7cm. bagaimana penyelesaiannya?
+
+analisa untuk penyelesaian :
+kita deklarasikan variabel untuk jari jari, nilai hasil, dan konstanta untuk nilai pi
+setelah itu kita hitung dengan rumus 
+luas = pi * r * r;
+
+source code
+
+    #include<iostream>
+    using namespace std;
+
+    int main(){
+        float r, hasil;
+        const float pi = 3.14;
+        r = 7;
+        hasil = pi * r * r;
+
+        cout << "Luas lingkarannya adalah : " << luas << endl;
+    }
+
+penjelasan source code 
+
+mengapa kita gunakan r, dan hasil bertipe float? ya betul sekali, karena hasil kemungkinan akan menampung nilai bertipe pecahan, dan r sebenarnya bisa menggunakan int tetapi agar lebih ringkas saja kita jadikan float
+
+dan pi kita jadikan const karena nilai pi sudah pasti dan tidak mungkin berubah
+
 
 
 
