@@ -200,7 +200,51 @@ mengapa kita gunakan r, dan hasil bertipe float? ya betul sekali, karena hasil k
 
 dan pi kita jadikan const karena nilai pi sudah pasti dan tidak mungkin berubah
 
-### Operator
+### Operator Aritmatika
+
+Operator Aritmatika adalah operator yang biasa digunakan untuk melakukan perhitungan matematika seperti penjumlahan, pengurangan, perkalian, pembagian
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/tabel aritmatika.png" alt="alt text" alt="Tabel Operasi Aritmatika" title="Penyelesaian">
+
+### Operator Gabungan
+
+Operator gabungan atau yang mungkin lebih dikenal dengan operasi unary adalah operasi aritmatika yang hanya menggunakan 2 variabel saja. jika biasanya kita menggunakan binary (hasil = a + b), maka jika dijadikan unary berarti hasil = a; hasil += b;
+
+jenis oeprator Gabungan
+
+    += (untuk menjumlahkan)
+    -= (untuk mengurangkan)
+    *= (untuk mengkalikan)
+    /= (untuk membagikan)
+    %= (untuk modulus)
+
+Contoh merubah operasi binary menjadi operasi gabungan (unary)
+
+    a = a + b; (binary)
+    a += a; (unary)
+
+    x = x * y;
+    x *= y;
+
+    luas = 1/2 * a * t (binary)
+    unarynya maka : 
+    luas = a;
+    luas *= t;
+    luas /= 2;
+
+### Operator Kenaikan (increment) dan Penurunan (Decrement)
+Operator ini dibagi menjadi dua jenis yaitu Increment (++) dan Decrement (--). oh iya untuk increment dan decrement masing masing ada 2 jenis. yaitu post increment, dan pre increment. kemudian post decrement, dan pre decrement
+
+<b>Post Increment</b>
+Operator Post Increment adalah operator penambahan nilai kepada variabel, dan dia akan menambahkannya terlebih dahulu
+
+<b>Pre Increment</b>
+Operator Pre Increment adalah operator penambahan nilai kepada variabel dan dia akan menambahkan sesudahnya
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/increment-decrement.png" alt="alt text" alt="Increment" title="Penyelesaian">
+
+<b>Post Decrement</b>
+<b>Pre Decrement</b>
 
 
 ## Mari kita kontrol program kita
