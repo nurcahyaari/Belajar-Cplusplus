@@ -243,8 +243,17 @@ Operator Pre Increment adalah operator penambahan nilai kepada variabel dan dia 
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/increment-decrement.png" alt="alt text" alt="Increment" title="Penyelesaian">
 
+penjelasan perbedaan Post dan pre
+d = ++c dan ketika d di outputkan ke layar monitor hasilnya adalah 1, karena nilai c dijumlahkan terlebih dahulu sebelum dbierikan nilainya kepada d
+
+sedangkan ada e = d++ hasilnya bisa 1 juga karena nilai d yang diberikan kepada e belum dijumlahkan, tetapi setelah nilai diberikan ke variabel e nilai d baru dijumlahkan
+
 <b>Post Decrement</b>
+sama halnya dengan increment tetapi decrement akan melakukan penurunan nilai
 <b>Pre Decrement</b>
+sama halnya dengan increment tetapi decrement akan melakukan penurunan nilai
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/idecrement.png" alt="alt text" alt="Increment" title="Penyelesaian">
 
 
 ## Mari kita kontrol program kita
