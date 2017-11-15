@@ -20,6 +20,10 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
     * [Operator Assignment](#operator-assignment)
 * [Berhitung Matematika di C++ yuk](#berhitung-matematika-di-c-yuk)
 * [Mari kita kontrol program kita](#mari-kita-kontrol-program-kita)
+    *[Kendalikan dengan statement If](#kendalikan-dengan-if)
+        *[Percabangan if](#syntax-if)
+        *[Percabangan if...else](#syntax-if-else)
+
 
 
 ## Sintak Dasar
