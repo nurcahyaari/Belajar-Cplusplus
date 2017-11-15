@@ -265,8 +265,17 @@ sama halnya dengan increment tetapi decrement akan melakukan penurunan nilai
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/decrement.png" alt="alt text" alt="Increment" title="Penyelesaian">
 
-
 ## Mari kita kontrol program kita
+
+sebelum kita kontrol program kita saya ingin menyampaikan materi operator logika terlebih dahulu, karena untuk mengkontrol program kita butuh pemahaman mengenaik operator logika ini
+
+### Operator Logika
+
+Operator logika adalah operator yang digunakan untuk melakukan operasi yang berkaitan dengan logika, yaitu benar atau salah, oh iya operator logika ini sebenarnya juga sudah dipelajari di matematika SMA. berikut adalah tabel operator logika.
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/tabel%20operator%20logika.png" alt="alt text" alt="Increment" title="Operator Logika">
+
+
 
 terkadang kita membutuhkan pemilihan keputusan di dalam program kita. jadi kita hanya butuh baris program ini saja yang diproses ketika kondisnya seperti ini, dan ketika kondisinya seperti itu maka kita akan memproses baris yang itu.
 
@@ -332,6 +341,55 @@ contoh penerapan lain dari if.. else
     }
 
 pada program diatas akan menghasilkan genap ketika inputan kita memang genap, dan akang menghasilkan ganjil jika inputan kita angka ganjil. mengapa bisa begitu, itu karena kita melakukan modulus. misal kita inputkan angka 50, 50 % 2 = 0, karena 2 * 25 = 50 tanpa adanya sisa, tetapi jika kita inputkan 51 maka 2 * 25 = 50, dan masih tersisa 1. karena 1 bukan 0 maka program akan mencetak pada blok elsenya
+
+#### if... else if... else
+
+terakhir adalah pengontrolan program menggunakan if..else if... else. dengan statement ini kita dapat melakukan kontrol yang memerlukan banyak kondisi, contoh semisal ketika nilainya > 10 maka kita akan mencetak "lebih besar dari 10", ketika nilainya > 50 kita akan mencetak "lebih besar dari 50" dan jika nilainya tidak ada dalam dua kondisi tersebut kita akan mencetak "tidak ada"
+
+sintak if...else if... else
+
+    if(kondisi1){
+        // pernyataan satu
+    }
+    else if(kondisi2){
+        // pernyataan dua
+    }
+    else{
+        // solusi
+    }
+
+contoh program yang menggunakan if..else if... else
+
+    #include<iostream>
+
+using namespace std;
+
+    int main(){
+        int angka;
+        cout << "masukan angka : ";
+        cin >> angka;
+        if(angka > 10 && angka < 20){ 
+            // baris dibawah ini akan dicetak jika anka yang diinputkan lebih besar dari 10,
+            // dan lebih kecil dari 20
+            cout << "Angka lebih besar dari 10 tetapi lebih kecil dari 20" << endl;
+        }
+        else if(angka > 20 && angka < 40){
+            // baris dibawah ini akan dicetak jika angka yang diinputkan lebih besar dari 20,
+            // dan lebih kecil dari 40
+            cout << "Angka lebih besar dari 20 tetapi lebih kecil dari 40" << endl;
+        }
+        else{
+            // baris dibawah ini akan dicetak jika angka yang diinputkan ada pada jangkauan
+            cout << "Angka yang anda masukan tidak ada dalam jangkauan" << endl;
+        }
+    }
+
+output
+"masukan angka : " 10
+"angka yang anda masukan tidak ada dalam jangkauan"
+
+"Masukan angka : " 15
+"angka lebih besar dari 10 tetapi lebih kecil dari 20
 
 
 
