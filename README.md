@@ -272,7 +272,7 @@ untuk melakukan pengontrolan dalam program kita dapat menggunakan if, if..else, 
 
 ### Kendalikan dengan If
 
-syntax if
+#### syntax if
 
     if(kondisi){
         // pernyataan
@@ -281,6 +281,51 @@ syntax if
 dibawah ini adalah contoh program yang kita buat dengan "if", pada program dibawah ini akan mencetak "Nilai a lebih besar dari 10" jika nilai yang kita input lebih besar dari 10, dan program tidak akan mencetak apapun jika nilai yang kita input kurang dari 10
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/if.gif" alt="alt text" alt="If" title="Penyelesaian">
+
+
+
+#### syntax if... else
+
+terkadang ketika kita ingin program yang kita tulis dapat menyelesaikan solusi lain ketika pernyataan <i>if</i> tidak terpenuhi maka kita dapat menggunakan solusi lain, yaitu if..else. untuk syntax if..else seperti ini
+
+    if(kondisi){
+        // pernyataan jika kondisi benar
+    }
+    else{
+        // pertnyataan jika kondisi salah
+    }
+
+contoh penerapan if else adalah seperti ini. 
+    jika saya bisa mendapatkan hati dia maka saya akan terus berusaha membuat dia nyaman, jika tidak yang penting dia bahagia, dan saya bisa membantu dia
+
+dari contoh diatas jika diubah ke pernyataan program maka hasilnya sepeti ini :
+
+    if(mendapatkan hati dia){
+        saya akan terus berusaha membuat dia nyaman
+    }
+    else{
+        yang penting dia bahagia, dan saya bisa membantu dia
+    }
+
+contoh penerapan lain dari if.. else
+
+    #include<iostream>
+    using namespace std;
+
+    int main(){
+        int angka; // pendeklarasian variabel angka
+        cout << "Masukan angka 1 - 100 ";
+        cin >> angka; // melakukan inputan
+
+        if(angka % 2 == 0){
+            cout << angka << " adalah bilangan genap" << endl; // blok ketika kondisi benar
+        }
+        else{
+            cout << angka << " adalah bilangan ganjil" << endl; // block ketika kondisi salah
+        }
+    }
+
+pada program diatas akan menghasilkan genap ketika inputan kita memang genap, dan akang menghasilkan ganjil jika inputan kita angka ganjil. mengapa bisa begitu, itu karena kita melakukan modulus. misal kita inputkan angka 50, 50 % 2 = 0, karena 2 * 25 = 50 tanpa adanya sisa, tetapi jika kita inputkan 51 maka 2 * 25 = 50, dan masih tersisa 1. karena 1 bukan 0 maka program akan mencetak pada blok elsenya
 
 
 
