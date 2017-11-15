@@ -391,6 +391,11 @@ output
 "Masukan angka : " 15
 "angka lebih besar dari 10 tetapi lebih kecil dari 20
 
+penjelasan
+jika kita inputkan nilainya 10 tidak dalam jangkauan karena kondisi pertama adalah angka yang lebih dari 10 tetapi kurang dari 20, berarti jangkauannya adalah 11-19. kemudian kondisi kedua adalah angka lebih besar dari 20 dan lebih kecil dari 40, berarti jangkauannya adalah 21-39
+
+untuk inputan kedua hasilnya "angka lebih besar dari 10 tetapi lebih kecil dari 20" karena angka 15 berada pada range 11-19
+
 
 
 
