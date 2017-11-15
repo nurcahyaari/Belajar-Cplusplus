@@ -1,5 +1,7 @@
 # Catatan
-Semua latihan sudah ada di folder source latihan, kalian bisa mencoba sendiri di komputer masing masing
+- Semua latihan sudah ada di folder source latihan, kalian bisa mencoba sendiri di komputer masing masing
+
+- Kompiler yang saya gunakan adalah GCC, dan text editor yang saya gunakan adalah Visual Studio Code. jika anda adalah pengguna windows maka saya sarangkan menggunakan IDE (Integrated Development Environment) Dev-C++, mengapa saya sarankan itu? karena dulu saya awal belajar menggunakan IDE tersebut dan saya rasa sangat mudah, dan nyaman. lalu mengapa sekarang saya tidak menggunakannya? karena IDE tersebut tidak tersedia di macOS, dan dulu juga ketika saya beralih ke Linux IDE tersebut juga tidak ada, jadi saya mulai membiasakan melakukan kompilasi lewat terminal. Untuk instalasi IDE Dev-C++ dan link download kalian bisa searching sendiri, hehehe maaf ya tidak menyertakan tutorial instalasi dan penggunaan Dev-C++ nya 
 
 
 # Apa itu C++
