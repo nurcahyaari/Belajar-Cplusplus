@@ -20,10 +20,18 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
     * [Operator Assignment](#operator-assignment)
 * [Berhitung Matematika di C++ yuk](#berhitung-matematika-di-c-yuk)
 * [Mari kita kontrol program kita](#mari-kita-kontrol-program-kita)
-    * [Kendalikan dengan statement If](#kendalikan-dengan-if)
-        * [Percabangan if](#syntax-if)
-        * [Percabangan if...else](#syntax-if-else)
-
+    * [Operator Logika](#operator-logiga)
+    * [Percabangan](#percabangan)
+        * [Kendalikan dengan statement If](#kendalikan-dengan-if)
+            * [Percabangan if](#syntax-if)
+            * [Percabangan if...else](#syntax-if-else)
+            * [Percabangan if...elseif...else](#syntax-if-elseif-else)
+        * [Kendalikan Dengan Switct](#kendalihan-dengan-switch)
+    * [Perulangan](#perulangan)
+        * [Perulangan dengan While](#perulangan-dengan-while)
+        * [Perulangan dengan Do While](#perulangan-dengan-do-while)
+        * [Perulangan dengan For](#perulangan-dengan-for)
+    * [Pernyataan Lompatan](#pernyataan-lompatan)
 
 
 ## Sintak Dasar
@@ -285,9 +293,11 @@ nah semisal kita akan mencetak 'saya suka dia' ketika nilai yang kita inputkan a
 
 untuk melakukan pengontrolan dalam program kita dapat menggunakan if, if..else, maupun switch case
 
-### Kendalikan dengan If
+### Percabangan
 
-#### syntax if
+#### Kendalikan dengan If
+
+##### syntax if
 
     if(kondisi){
         // pernyataan
@@ -299,7 +309,7 @@ dibawah ini adalah contoh program yang kita buat dengan "if", pada program dibaw
 
 
 
-#### syntax if... else
+##### syntax if... else
 
 terkadang ketika kita ingin program yang kita tulis dapat menyelesaikan solusi lain ketika pernyataan <i>if</i> tidak terpenuhi maka kita dapat menggunakan solusi lain, yaitu if..else. untuk syntax if..else seperti ini
 
@@ -342,7 +352,7 @@ contoh penerapan lain dari if.. else
 
 pada program diatas akan menghasilkan genap ketika inputan kita memang genap, dan akang menghasilkan ganjil jika inputan kita angka ganjil. mengapa bisa begitu, itu karena kita melakukan modulus. misal kita inputkan angka 50, 50 % 2 = 0, karena 2 * 25 = 50 tanpa adanya sisa, tetapi jika kita inputkan 51 maka 2 * 25 = 50, dan masih tersisa 1. karena 1 bukan 0 maka program akan mencetak pada blok elsenya
 
-#### if... else if... else
+##### if... else if... else
 
 terakhir adalah pengontrolan program menggunakan if..else if... else. dengan statement ini kita dapat melakukan kontrol yang memerlukan banyak kondisi, contoh semisal ketika nilainya > 10 maka kita akan mencetak "lebih besar dari 10", ketika nilainya > 50 kita akan mencetak "lebih besar dari 50" dan jika nilainya tidak ada dalam dua kondisi tersebut kita akan mencetak "tidak ada"
 
@@ -395,6 +405,49 @@ penjelasan
 jika kita inputkan nilainya 10 tidak dalam jangkauan karena kondisi pertama adalah angka yang lebih dari 10 tetapi kurang dari 20, berarti jangkauannya adalah 11-19. kemudian kondisi kedua adalah angka lebih besar dari 20 dan lebih kecil dari 40, berarti jangkauannya adalah 21-39
 
 untuk inputan kedua hasilnya "angka lebih besar dari 10 tetapi lebih kecil dari 20" karena angka 15 berada pada range 11-19
+
+
+#### Kendalikan Dengan Switct
+
+switch sama halnya dengan if tetapi pada switch disini ktia tidak bisa melakukan perbandingan nilai lebih besar atau lebih kecil. biasanya switch digunakan untuk melakukan pemilihan pada menu, sintak dasar switch
+
+    switch(pilihan) {
+        case pilihan_pertama : {
+            // pernyataan satu
+            break;
+        }
+        case pilihan_kedua : {
+            // pernyataan kedua
+            break;
+        }
+        case pilihan_ke-N : {
+            // pernyataan ke-N
+            break;
+        }
+        default : {
+            // pernyataan default
+            break;
+        }
+    }
+
+contoh program yang menggunakan switch 
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/switch.png" alt="alt text" alt="If" title="switch">
+
+dan ketika dikompilasi maka outputnya akan seperti ini
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/switch-output.png" alt="alt text" alt="If" title="switch">
+
+
+### Perulangan
+
+#### Perulangan dengan While
+
+#### Perulangan dengan Do While
+
+#### Perulangan dengan For
+
+### Pernyataan Lompatan
 
 
 
