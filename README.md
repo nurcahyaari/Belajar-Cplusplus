@@ -32,6 +32,7 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
         * [Perulangan dengan Do While](#perulangan-dengan-do-while)
         * [Perulangan dengan For](#perulangan-dengan-for)
     * [Pernyataan Lompatan](#pernyataan-lompatan)
+* [Fungsi](#fungsi)
 
 
 ## Sintak Dasar
@@ -448,6 +449,58 @@ dan ketika dikompilasi maka outputnya akan seperti ini
 #### Perulangan dengan For
 
 ### Pernyataan Lompatan
+
+## Fungsi
+
+Pada saat kita membuat program di C++ secara tidak langsung kita sudah membuat fungsi, yaitu main(). main() adalah contoh kecil dari sebuat fungsi pada C++, main() adalah fungsi untama dari program C++ yang mana semua baris program akan dimulai dari sini, semua yang ditulis di main() akan diproses dan setiap baris program yang tidak ditulis disini maka tidak akan diproses sama sekali.
+
+C++ sendiri sudah memiliki beberapa fungsi yang dapat kita gunakan tanpa kita ketik dulu prosesnya, contohnya adalah pow() untuk melakukan pempangkatan program, tapi sebelum menggunakan pow kalian harus mendaftarkan librarynya, library pow() adalah math.h, jadi kalian harus mendaftarkan terlebih dahulu dengan cara #include<math.h> 
+
+dengan menggunakan fungsi maka kita dapat mengakses blok program tersebut tanpa perlu kita ketik ulang berkali-kali, konsep ini sangat mirip dengan konsep perulangan tetapi konsep fungsi ini bukan perulangan. contohnya adalah saat kita ingin melakukan perhitungan luas lingkaran sebanyak 2 kali tetapi dengan jari jari yang berbeda dan setiap perhitungan akan dilakukan setelah melakukan input nilai jari jari maka kita bisa tinggal memanggil fungsi tersebut, tanpa perlu menulis rumus sebanyak 2 kali. lalu bagaimana cara mendeklarasikan fungsi? berikut ini adalah sintak fungsi
+
+    tipe_data nama_fungsi(parameter_ke-1, parameter_ke-2, parameter_ke-3, parameter_ke-n){
+        // kode fungsi
+        return kembalian
+    }
+
+penjelasan tentang sintak fungsi :
+
+    - tipe data adalah tipe untuk menentukan data yang akan dikembalikan fungsi tersebut berupa apa. jika kita mendeklarasikan fungsi sebagai int maka kembaliannya akan int juga, tetapi jika kita buat fungsi tersebut bertipe float maka kembaliannya akan bertipe float juga, begitu seterusnya
+
+    - nama fungsi ya adalah nama fungsi tersebut, nama fungsi berguna untuk ketika kita memanggil fungsi tersebut di main(). jika tidak punya nama maka tidak bisa dipanggil, coba bayangkan jika anda menemui doi kita tanpa mengetahui namanya bagaimana cara memanggilnya? begitu pula fungsi juga harus memiliki nama. dan juga untuk pemberian nama dalam fungsi sama halnya dengan pemberian nama di variabel, syarat syaratnya yang terdapat dalam pemberian nama variabel juga sama dengan syarat pemberian nama pada fungsi, jika anda lupa tentang syarat pemberian nama bisa discroll keatas kembali
+
+    - parameter parameter adalah sebuah variabel penampung nilai ketika fungsi dipanggil. parameter sebenarnya adalah variabel yang dideklarasikan didalam kurung setelah nama fungsi, banyaknya parameter tergantung kebutuhan yang kita butuhkan. kita juga bisa membuat fungsi tanpa harus mendeklarasikan prameter
+
+    - return adalah nilai yang akan dikembalikan dari sebuah fungsi
+
+
+kemudian untuk memanggil fungsi seperti ini
+
+    nama_fungsi(nilai1, nilai2, nilai_ke-n);
+
+banyaknya nilai tergantung oleh banyaknya parameter yang kita deklarasikan saat kita melakukan pendeklarasian fungsi tersebut
+
+contoh penggunaan fungsi
+
+    ````C++
+        #include<iostream>
+        using namespace std;
+
+        float luasLingkaran(int r){ // pembuatan fungsi bertipe float, dengan nama luasLingkaran berparameter 1
+            return 1/(float)2 * 3.14 * r * r; // kembaliannya adalah nilai tersebut
+        }
+
+        int main(){
+            int jari;
+            float hasil;
+            cout << "Masukan Jari Jari : " ; 
+            cin >> jari;
+            hasil = luasLingkaran(jari); // pemanggilan fungsi luasLingkaran pada fungsi main
+            cout << "Luas Lingkaran dengan jari jari : " << jari << " adalah " << hasil << endl;
+        }
+    ````
+
+Penjelasan Kode : 
 
 
 
