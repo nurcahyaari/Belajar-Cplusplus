@@ -407,7 +407,7 @@ jika kita inputkan nilainya 10 tidak dalam jangkauan karena kondisi pertama adal
 untuk inputan kedua hasilnya "angka lebih besar dari 10 tetapi lebih kecil dari 20" karena angka 15 berada pada range 11-19
 
 
-#### Kendalikan Dengan Switct
+#### Kendalikan Dengan Switch
 
 switch sama halnya dengan if tetapi pada switch disini ktia tidak bisa melakukan perbandingan nilai lebih besar atau lebih kecil. biasanya switch digunakan untuk melakukan pemilihan pada menu, sintak dasar switch
 
