@@ -33,6 +33,7 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
         * [Perulangan dengan For](#perulangan-dengan-for)
     * [Pernyataan Lompatan](#pernyataan-lompatan)
 * [Fungsi](#fungsi)
+* [Array](#array)
 
 
 ## Sintak Dasar
@@ -507,7 +508,7 @@ output program
 
 
 
-
+## Array
 
 
     
