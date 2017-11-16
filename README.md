@@ -506,6 +506,51 @@ output program
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/fungsi.png" alt="alt text" alt="If" title="Fungsi">
 
 
+#### Fungsi tanpa nilai kembalian
+jikaa sebelumnya kita mempelajari fungsi dengan nilai kembalian maka sekarang kita akan masuk ke fungsi tanpa nilai kembalian. nah fungsi tanpa nilai kembalian adalah fungsi yang tidak menggunakan statement return pada block fungsinya, jadi setiap memanggil fungsi kita tidak erlu menyimpannya kedalam variabel lain atau langsung dioutputkan dengan cout, tetapi langsing panggil saja nama fungsinya
+
+sintak fungsi tanpa nilai kembalian
+
+    void nama_fungsi(parameter_ke-1, parameter_ke-2, parameter_ke-3, parameter_ke-n){
+        // block kode program
+    }
+
+untuk penjelasan fungsi tanpa nilai kembalian sama dengan fungsi dengan nilai kembalian bedanya saja pada fungsi tanpa nilai kembalian kita tidak dapat menggunakan return, karena jika kita memaksakan menggunakan return maka program akan error ketika dikompilasi
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/error-void.png" alt="alt text" alt="If" title="Kita mendapatkan Error">
+
+berikut ini adalah contoh program menggunakan void
+
+
+````C++
+#include<iostream>
+using namespace std;
+
+float luasLingkaran(int r){ // pembuatan fungsi bertipe float, dengan nama luasLingkaran berparameter 1
+    return 1/(float)2 * 3.14 * r * r; // kembaliannya adalah nilai tersebut
+}
+
+void cetakHello(){
+    int jari;
+    float hasil;
+    cout << "Masukan Jari Jari : " ; 
+    cin >> jari;
+    hasil = luasLingkaran(jari); // pemanggilan fungsi luasLingkaran pada fungsi main
+    cout << "Luas Lingkaran dengan jari jari : " << jari << " adalah " << hasil << endl;
+}
+
+int main(){
+    cetakHello();
+}
+````
+
+outputnya
+
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/void.png" alt="alt text" alt="If" title="Kita mendapatkan Error">
+
+penjelasan :
+
+program diatas sama halnya dengan program yang kita ketik hanya menggunakan float/ fungsi dengan nilai kembalian. perbedaannya kita memanggil fungsi luasLingkaran tersebut di fungsi cetakHello, dan semua proses mulai menginputkan hingga mengoutputkan kita lakukan di fungsi cetakHello();
 
 
 ## Array
