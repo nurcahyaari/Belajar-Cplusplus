@@ -553,9 +553,77 @@ penjelasan :
 program diatas sama halnya dengan program yang kita ketik hanya menggunakan float/ fungsi dengan nilai kembalian. perbedaannya kita memanggil fungsi luasLingkaran tersebut di fungsi cetakHello, dan semua proses mulai menginputkan hingga mengoutputkan kita lakukan di fungsi cetakHello();
 
 
+#### Scope Variabel 
+saat kita membuat fungsi pasti kita selalu menuliskan kode program kita didalam fungsi tersebut, semua kode yang kita masukan berada setelah kurung kurawal dan sebelum kurung kurahir. nah itu yang namanya Scope Variabel, atau ruang lingkup variabel. kode yang kita tuliskan akan selalu hidup di dalam block program tersebut dan tidak akan bisa hidup di blok lainnya, mungkin akan ada pertanyaan "Loh tapi saat fungsinya dipanggil isi yang berada di scope fungsi tersebut bisa berjalan kok. nah dia itu tetap hidup di dalam fungsi tersebut, jadi ketika fungsi dipanggil di fungsi lain yang dipanggil fungsinya bukan isi dari fungsinya.
+
+contoh
+
+````C++
+float hitungab(){
+    int a, b;
+    a = 10; b = 20;
+}
+
+int main(){
+    cout << "Nilai A adalah << a << endl; // akan menghasilkan error
+}
+````
+
+nah program diatas akan menghasilkan error karena program mengganggap kita belum mendeklarasikan variabel a, walaupun kita sudah mendeklarasikannya di fungsi hitungab, karena int a dan int b hanya hidup di ruang lingkup fungsi hitungab, jadi selain di fungsi tersebut variabel a dan b akan selalu tidak dianggap ada jika kita panggil selain dari fungsi hitungab. lalu bagaimana agar semua variabel bisa digunakan di semua fungsi?
+jawabannya yaitu kita gunakan variabel global. apa itu variabel global?
+
+````C++
+#include<iostream>
+using namespace std;
+
+int global;             // global adalah variabel global dan dia bisa dipanggi di semua fungsi yang ada
+
+int main(){
+    int a;              // A adalah variabel lokal yang hanya hidup di fungsi main
+}
+
+````
+
+semua variabel yang dideklarasikan di atas semua fungsi/ diluar ruang lingkup fungsi dia adalah variabel global dan akan selalu bisa digunakan di fungsi manapun selama fungsi yang ingin menggunakannya berada di bawah variabel tersebut
+
+
 ## Array
 
+Array secara harfiah berarti tumpukan, ya tumpukan variabel variabel yang memiliki tipe data yang sama, karena array tidak bisa menyimpan variabel dengan tipe data yang berbeda.
+
+analoginya seperti ini, kalian pasti tahu komik kan, nah semisal saya memiliki komik Shape of voice volume 1 - 7 itu adalah array, yang mana array pertama adalah Shape of Voice volume 1 dan array terakhir adalah Shape of Voice volume 7. walaupun komik Shape of Voice ada 7 volume dan cerita setiap volumenya berbeda tetapi tetap saja komik tersebut berjudul Shape of Voice bukan Attack On Titan atau K-On, jadi jika diibaratkan Shape of Voice adalah nama array dan volume 1 sampai 7 adalah isi dari arraynya
+
+untuk pendeklarasian array seperti ini
+
+    tipe_data nama_array[jumlah_array];
+
+pendeklarasiannya mirip dengan variabel kan? yap array juga variabel, hanya saya bisa menampung data yang banyak tetapi memiliki tipe yang sama. lalu apa itu jumlah_array, jumlah_array maksudnya adalah jumlah seluruh data yang dapat ditampung oleh array, jika kita menggunakan analogi diatas dapat diartikan volume 1 sampai volume 7 adalah jumlah_array
+
+contoh program menggunakan array
+
+````C++
+#include<iostream>
+
+using namespace std;
+
+int main(){
+    int arr[5]; // kita mendeklarasikan array dengan nama arr dan jumlah data yang dapat ditampung adalah 5;
+
+    for(int i = 0; i < 5; i++){ // scope ini bertugas untuk melakukan perulangan sebanyak 5 kali dan mengisi element setiap index arraynya
+        cout << "Masukan isi array pertama : ";
+        cin >> arr[i];
+    }
+    cout << endl;
+    cout << "Isi dari array tersebut adalah : ";
+    for(int i = 0; i < 5; i++){ // scope ini bertugas untuk melakukan perulangan sebanyak 5 kali dan mengoutputkan isi dari array 1 - 5
+        cout << arr[i] << " " ;
+    }
+    cout << endl;
+}
+````
 
     
+outputnya
 
+<img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/array1.png" alt="alt text" alt="If" title="Cara menggunakan array">
 
