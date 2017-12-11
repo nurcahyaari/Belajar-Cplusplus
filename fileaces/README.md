@@ -23,5 +23,62 @@ oh iya rei untuk contoh programnya lagi sudah ada di directori ini. kamu tinggal
 
 
 
+Untuk mendeklarasikan file akses kita perlu memasukan library standarnya
+yaitu
+
+    #include<fstream>
+
+
+kemudian untuk menggunakan melakukan output ke dalam file yaitu dengan
+
+    ofstream namaobjek;
+
+dimana nama objek sesuai kebutuhakn kita. kita bisa saja menamakan objeknya hendra, budi, tas, dan lain lain
+
+lalu untuk mencetak text ke dalam file yaitu menggunakan sintak
+
+    namaobjek << "Hello World" ;
+
+dimana "Hello World" adalah text yang akan tercetak didalam file tersebut
+
+nah selain untuk mencetak text kedalam file, kita juga bisa mengambil data dari file agar bisa ditampung/ dicetak didalam program yang ada
+
+caranya dengan menggunakan
+
+    ifstream namaobjek;
+
+untuk penamaan objek sesuai kebutuhan kita.
+
+dan untuk mengambil isi filenya yaitu dengna
+
+    namaobjek >> variabel_penampung;
+
+
+oh iya setelah kita meninstansiasikan objek ofstream ataupun ifstream kita harus melakukan pembukaan terhadap file yang ada. caranya seperti ini
+
+    namaobjek.open("namafile");
+
+nah contohnya seperti ini
+
+    //mencetak ke dalam file
+
+    int main(){
+        ofstream cetak;
+        cetak.open("file.txt");
+        cetak << "Hello World" << endl;
+    }
+
+    // mengambil data dari file
+
+    int main(){
+        ifstream input;
+        string tampung;
+        input.open("file.txt");
+        input >> tampung;
+        cout << tampung << endl;
+    }
+
+
+nah untuk dasarnya seperti itu. kalian bisa mengunduh program contohnya didalam folder ini
 
 
