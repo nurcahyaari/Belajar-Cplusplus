@@ -1,6 +1,9 @@
 <h1> File Access </h1>
 
 Materi yang akan didapatkan
-<ul>
+<ol>
+    <li>Membuat File</li>
+    <li>Membuat File dan menginputkan data ke FIle</li>
     <li>Membaca File kemudian dimasukan ke Vector</li>
-</ul>
+    <li>Membaca FIle kemudian Mengupdate file </li>
+</ol>
