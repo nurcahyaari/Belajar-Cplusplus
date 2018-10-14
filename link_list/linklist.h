@@ -17,7 +17,7 @@ class LinkList{
             return head == NULL;
         }
 
-        void AddF(int nilai){ // for Adding data from front
+        void AddFront(int nilai){ // for Adding data from front
             Node * help = new Node();
             help->data = nilai;
             help->next = NULL;
@@ -30,7 +30,16 @@ class LinkList{
             }
         }
 
-        void AddR(int nilai){ // for Adding data from rear
+        void DelFront(){ // for deleting in front of data
+            Node * help = new Node();
+            help = head;
+            if(!checkNode()){
+                help = help->next;
+                head = help;
+            }
+        }
+
+        void AddRear(int nilai){ // for Adding data from rear
             Node * help = new Node();
             help->data = nilai;
             help->next = NULL;
@@ -48,7 +57,26 @@ class LinkList{
             }
         }
 
-        void AddSP(int nilai, int p){ // from adding data to specific position
+        void DelRear(){ // Deleting From rear of data
+            Node * help = new Node();
+            int b;
+            Node * SizeLL = new Node();
+            int size = 0;
+            SizeLL = head;
+            while(SizeLL->next != NULL){
+                SizeLL = SizeLL->next;
+                size++;
+            }
+            help = head;
+            int i = 0;
+            while(i < size - 1){
+                help = help->next;
+                i++;
+            }
+            help->next = NULL;
+        }
+
+        void AddSpecificPosition(int nilai, int p){ // from adding data to specific position
             Node * help = new Node();
             help->data = nilai;
             help->next = NULL;
