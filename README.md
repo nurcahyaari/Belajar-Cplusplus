@@ -1,16 +1,14 @@
 # Catatan
-- Semua latihan sudah ada di folder source latihan, kalian bisa mencoba sendiri di komputer masing masing
+- Semua latihan sudah ada di folder source latihan, kalian bisa mencoba sendiri di komputer masing-masing
 
-- Kompiler yang saya gunakan adalah GCC, dan text editor yang saya gunakan adalah Visual Studio Code. jika anda adalah pengguna windows maka saya sarangkan menggunakan IDE (Integrated Development Environment) Dev-C++, mengapa saya sarankan itu? karena dulu saya awal belajar menggunakan IDE tersebut dan saya rasa sangat mudah, dan nyaman. lalu mengapa sekarang saya tidak menggunakannya? karena IDE tersebut tidak tersedia di macOS, dan dulu juga ketika saya beralih ke Linux IDE tersebut juga tidak ada, jadi saya mulai membiasakan melakukan kompilasi lewat terminal. Untuk instalasi IDE Dev-C++ dan link download kalian bisa searching sendiri, hehehe maaf ya tidak menyertakan tutorial instalasi dan penggunaan Dev-C++ nya 
+- Kompiler yang saya gunakan adalah GCC, dan text editor yang saya gunakan adalah Visual Studio Code. Jika anda adalah pengguna windows maka saya sarankan menggunakan IDE (Integrated Development Environment) Dev-C++, mengapa saya sarankan itu? Karena dulu saya awal belajar menggunakan IDE tersebut dan saya rasa sangat mudah, dan nyaman. Lalu mengapa sekarang saya tidak menggunakannya? karena IDE tersebut tidak tersedia di macOS, dan dulu juga ketika saya beralih ke Linux IDE tersebut juga tidak ada, jadi saya mulai membiasakan melakukan kompilasi lewat terminal. Untuk instalasi IDE Dev-C++ dan link download kalian bisa searching sendiri, hehehe maaf ya tidak menyertakan tutorial instalasi dan penggunaan Dev-C++ nya 
 
 
 # Apa itu C++
 C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne Stroustrup pada tahun 1980 an di Bell Labs. Salah satu kelebihan bahasa C++ dibandingkan bahasa C adalah dukungan terhadap konsep PBO (Pemrograman Berorientasi Objek)
 
-
-
 # Table Konten : 
-* [Sintak Dasar](#sintak-dasar)
+* [Sintaks Dasar](#sintaks-dasar)
 * [Komentarin Sourcenya yuk biar tidak bingung](#komentar)
     * [Komentar sebaris](#komentar-sebaris)
     * [komentar lebih dari 1 baris](#komentar-lebih-dari-sebaris)
@@ -26,7 +24,8 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
             * [Percabangan if](#syntax-if)
             * [Percabangan if...else](#syntax-if-else)
             * [Percabangan if...elseif...else](#if-else-if-else)
-        * [Kendalikan Dengan Switct](#kendalikan-dengan-switch)
+        * [Kendalikan Dengan Switch](#kendalikan-dengan-switch)
+        * [Kendalikan dengan Ternary Operator](#kendalikan-dengan-ternary-operator)
     * [Perulangan](#perulangan)
         * [Perulangan dengan While](#perulangan-dengan-while)
         * [Perulangan dengan Do While](#perulangan-dengan-do-while)
@@ -36,8 +35,8 @@ C++ adalah sebuah bahasa pemrograman yang dikembangkan dari bahasa C oleh Bjarne
 * [Array](#array)
 
 
-## Sintak Dasar
-Untuk menulis kode program dengan C++ ada sintak dasarnya, dimana sintak tersebut sangatlah penting agar program dapat berjalan, karena jika tidak ada maka program tidak dapat berjalan sama sekali, atau bahkan error. Sintak dasarnya seperti ini :
+## Sintaks Dasar
+Untuk menulis kode program dengan C++ ada sintaks dasarnya, dimana sintaks tersebut sangatlah penting agar program dapat berjalan, karena jika tidak ada maka program tidak dapat berjalan sama sekali, atau bahkan error. Sintaks dasarnya seperti ini :
 
     #include<iostream>
     using namespace std;
@@ -54,9 +53,9 @@ Penjelasan kode :
 oh iya #include itu termasuk preprocessor dan #include ini berguna untuk memanggil atau menambahkan file header.
 setiap File header memiliki fungsi dan kegunaan tertentu salah satunya adalah iostream. 
 iostream adalah library standar untuk melakukan operasi input maupun output dalam program 
-yang kita tulis, salah satu sintak untuk melakukan input dan output adalah cin 
-dan cout dimana cin adalah sintak untuk melakukan input dari keyboard dan
-cout adalah sintak untuk mencetak kode program agar dapat tampil dilayar.
+yang kita tulis, salah satu sintaks untuk melakukan input dan output adalah cin 
+dan cout dimana cin adalah sintaks untuk melakukan input dari keyboard dan
+cout adalah sintaks untuk mencetak kode program agar dapat tampil dilayar.
 berikut ini adalah contoh sederhana dari input dan output program paling sederhana : 
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/basic%20input%20output%20.gif" alt="alt text" width="510px" height="267px" alt="input output sederhana" title="input output sederhana">
@@ -170,6 +169,7 @@ berikut ini adalah cara mendeklarasikan konstanta dengan benar
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/deklarasi%20konstanta.png" alt="alt text" alt="input output sederhana" width="632px" height="483px" title="Pendeklarasian konstanta yang benar">
 
+Konstanta harus diberi nilai saat dideklarasikan, karena setelah deklarasi konstanta tidak dapat diubah nilainya. Maka dari itu konstanta tidak bisa dideklarasikan dengan tanpa nilai.
 
 ### Operator Assignment
 Assignment atau penugasan, adalah operator untuk memberikan nilai kepada variabel ataupun konstanta. cara untuk melakukan assignment atau penugasan adalah dengan menggunakan operator '=' (sama dengan)
@@ -291,7 +291,7 @@ terkadang kita membutuhkan pemilihan keputusan di dalam program kita. jadi kita 
 
 nah dengan kemamumpuan untuk mengkontrol program kita dapat membuat program berjalan semestinya, lalu maksudnya mengontrol itu apa saya masih bingung?
 
-nah semisal kita akan mencetak 'saya suka dia' ketika nilai yang kita inputkan adalah bilangan ganjil saja, maka otomatis ketika nilai yang kita inputkan genap berarti tidak akan tampil apa apa di layar monitor kita.
+nah semisal kita akan mencetak "saya suka dia" ketika nilai yang kita inputkan adalah bilangan ganjil saja, maka otomatis ketika nilai yang kita inputkan genap berarti tidak akan tampil apa apa di layar monitor kita.
 
 untuk melakukan pengontrolan dalam program kita dapat menggunakan if, if..else, maupun switch case
 
@@ -334,9 +334,9 @@ dari contoh diatas jika diubah ke pernyataan program maka hasilnya sepeti ini :
         yang penting dia bahagia, dan saya bisa membantu dia
     }
 
-contoh penerapan lain dari if.. else
+contoh penerapan lain dari if..else
 
-    #include<iostream>
+    #include <iostream>
     using namespace std;
 
     int main(){
@@ -358,16 +358,16 @@ pada program diatas akan menghasilkan genap ketika inputan kita memang genap, da
 
 terakhir adalah pengontrolan program menggunakan if..else if... else. dengan statement ini kita dapat melakukan kontrol yang memerlukan banyak kondisi, contoh semisal ketika nilainya > 10 maka kita akan mencetak "lebih besar dari 10", ketika nilainya > 50 kita akan mencetak "lebih besar dari 50" dan jika nilainya tidak ada dalam dua kondisi tersebut kita akan mencetak "tidak ada"
 
-sintak if...else if... else
+sintaks if...else if... else
 
     if(kondisi1){
-        // pernyataan satu
+        // pernyataan jika kondisi1 true
     }
     else if(kondisi2){
-        // pernyataan dua
+        // pernyataan jika kondisi2 true
     }
-    else{
-        // solusi
+    else {
+        // pernyataan jika semua kondisi sebelumnya false
     }
 
 contoh program yang menggunakan if..else if... else
@@ -411,7 +411,7 @@ untuk inputan kedua hasilnya "angka lebih besar dari 10 tetapi lebih kecil dari 
 
 #### Kendalikan Dengan Switch
 
-switch sama halnya dengan if tetapi pada switch disini ktia tidak bisa melakukan perbandingan nilai lebih besar atau lebih kecil. biasanya switch digunakan untuk melakukan pemilihan pada menu, sintak dasar switch
+switch sama halnya dengan if tetapi pada switch disini ktia tidak bisa melakukan perbandingan nilai lebih besar atau lebih kecil. Biasanya switch digunakan untuk melakukan pemilihan pada menu, berikut sintaks dasar switch:
 
     switch(pilihan) {
         case pilihan_pertama : {
@@ -440,6 +440,23 @@ dan ketika dikompilasi maka outputnya akan seperti ini
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/switch-output.png" alt="alt text" alt="If" title="switch">
 
+#### Kendalikan dengan Ternary Operator
+Ternary operator ini merupakan short hand dari if..else sintaks. Jadi kalian cukup menulis sintaks sederhana seperti di bawah ini:
+```
+// Sintaks dasar
+(kondisi) : pernyataan_jika_true : pernyataan_jika_false;
+
+// Contoh Pertama
+int age = 14;
+string result = (age < 17) ? "Kamu masih anak-anak" : "Anda sudah dewasa";
+cout << result; // Akan menampilkan string "Kamu masih anak-anak"
+
+// Contoh Kedua
+(age < 17) ? cout << "Kamu masih anak-anak" : cout << "Kamu sudah dewasa"; 
+// Kode tersebut juga akan menampilkan string "Kamu masih anak-anak"
+```
+Sangat sederhana bukan?
+
 
 ### Perulangan
 
@@ -457,14 +474,14 @@ Pada saat kita membuat program di C++ secara tidak langsung kita sudah membuat f
 
 C++ sendiri sudah memiliki beberapa fungsi yang dapat kita gunakan tanpa kita ketik dulu prosesnya, contohnya adalah pow() untuk melakukan pempangkatan program, tapi sebelum menggunakan pow kalian harus mendaftarkan librarynya, library pow() adalah math.h, jadi kalian harus mendaftarkan terlebih dahulu dengan cara #include<math.h> 
 
-dengan menggunakan fungsi maka kita dapat mengakses blok program tersebut tanpa perlu kita ketik ulang berkali-kali, konsep ini sangat mirip dengan konsep perulangan tetapi konsep fungsi ini bukan perulangan. contohnya adalah saat kita ingin melakukan perhitungan luas lingkaran sebanyak 2 kali tetapi dengan jari jari yang berbeda dan setiap perhitungan akan dilakukan setelah melakukan input nilai jari jari maka kita bisa tinggal memanggil fungsi tersebut, tanpa perlu menulis rumus sebanyak 2 kali. lalu bagaimana cara mendeklarasikan fungsi? berikut ini adalah sintak fungsi
+dengan menggunakan fungsi maka kita dapat mengakses blok program tersebut tanpa perlu kita ketik ulang berkali-kali, konsep ini sangat mirip dengan konsep perulangan tetapi konsep fungsi ini bukan perulangan. contohnya adalah saat kita ingin melakukan perhitungan luas lingkaran sebanyak 2 kali tetapi dengan jari jari yang berbeda dan setiap perhitungan akan dilakukan setelah melakukan input nilai jari jari maka kita bisa tinggal memanggil fungsi tersebut, tanpa perlu menulis rumus sebanyak 2 kali. lalu bagaimana cara mendeklarasikan fungsi? berikut ini adalah sintaks fungsi
 
     tipe_data nama_fungsi(parameter_ke-1, parameter_ke-2, parameter_ke-3, parameter_ke-n){
         // kode fungsi
         return kembalian
     }
 
-penjelasan tentang sintak fungsi :
+penjelasan tentang sintaks fungsi :
 
     - tipe data adalah tipe untuk menentukan data yang akan dikembalikan fungsi tersebut berupa apa. jika kita mendeklarasikan fungsi sebagai int maka kembaliannya akan int juga, tetapi jika kita buat fungsi tersebut bertipe float maka kembaliannya akan bertipe float juga, begitu seterusnya
 
@@ -507,9 +524,9 @@ output program
 
 
 #### Fungsi tanpa nilai kembalian
-jikaa sebelumnya kita mempelajari fungsi dengan nilai kembalian maka sekarang kita akan masuk ke fungsi tanpa nilai kembalian. nah fungsi tanpa nilai kembalian adalah fungsi yang tidak menggunakan statement return pada block fungsinya, jadi setiap memanggil fungsi kita tidak erlu menyimpannya kedalam variabel lain atau langsung dioutputkan dengan cout, tetapi langsing panggil saja nama fungsinya
+jika sebelumnya kita mempelajari fungsi dengan nilai kembalian maka sekarang kita akan masuk ke fungsi tanpa nilai kembalian. nah fungsi tanpa nilai kembalian adalah fungsi yang tidak menggunakan statement return pada block fungsinya, jadi setiap memanggil fungsi kita tidak perlu menyimpannya kedalam variabel lain atau langsung dioutputkan dengan cout, tetapi langsing panggil saja nama fungsinya
 
-sintak fungsi tanpa nilai kembalian
+sintaks fungsi tanpa nilai kembalian
 
     void nama_fungsi(parameter_ke-1, parameter_ke-2, parameter_ke-3, parameter_ke-n){
         // block kode program
@@ -554,9 +571,9 @@ program diatas sama halnya dengan program yang kita ketik hanya menggunakan floa
 
 
 #### Scope Variabel 
-saat kita membuat fungsi pasti kita selalu menuliskan kode program kita didalam fungsi tersebut, semua kode yang kita masukan berada setelah kurung kurawal dan sebelum kurung kurahir. nah itu yang namanya Scope Variabel, atau ruang lingkup variabel. kode yang kita tuliskan akan selalu hidup di dalam block program tersebut dan tidak akan bisa hidup di blok lainnya, mungkin akan ada pertanyaan "Loh tapi saat fungsinya dipanggil isi yang berada di scope fungsi tersebut bisa berjalan kok. nah dia itu tetap hidup di dalam fungsi tersebut, jadi ketika fungsi dipanggil di fungsi lain yang dipanggil fungsinya bukan isi dari fungsinya.
+Saat kita membuat fungsi pasti kita selalu menuliskan kode program kita di dalam fungsi tersebut, semua kode yang kita masukan berada setelah buka kurung kurawal dan sebelum tutup kurung kurawal. Nah itu yang namanya Scope Variabel, atau ruang lingkup variabel. Kode yang kita tuliskan akan selalu hidup di dalam block program tersebut dan tidak akan bisa hidup di blok lainnya, mungkin akan ada pertanyaan "Loh tapi saat fungsinya dipanggil isi yang berada di scope fungsi tersebut bisa berjalan kok. nah dia itu tetap hidup di dalam fungsi tersebut, jadi ketika fungsi dipanggil di fungsi lain yang dipanggil fungsinya bukan isi dari fungsinya.
 
-contoh
+contoh:
 
 ````C++
 float hitungab(){
@@ -569,7 +586,7 @@ int main(){
 }
 ````
 
-nah program diatas akan menghasilkan error karena program mengganggap kita belum mendeklarasikan variabel a, walaupun kita sudah mendeklarasikannya di fungsi hitungab, karena int a dan int b hanya hidup di ruang lingkup fungsi hitungab, jadi selain di fungsi tersebut variabel a dan b akan selalu tidak dianggap ada jika kita panggil selain dari fungsi hitungab. lalu bagaimana agar semua variabel bisa digunakan di semua fungsi?
+nah program diatas akan menghasilkan error karena program mengganggap kita belum mendeklarasikan variabel a, walaupun kita sudah mendeklarasikannya di fungsi hitungab, karena int a dan int b hanya hidup di ruang lingkup fungsi hitungab, jadi selain di fungsi tersebut variabel a dan b akan selalu tidak dianggap ada jika kita panggil selain dari fungsi hitungan. lalu bagaimana agar semua variabel bisa digunakan di semua fungsi?
 jawabannya yaitu kita gunakan variabel global. apa itu variabel global?
 
 ````C++
@@ -597,7 +614,7 @@ untuk pendeklarasian array seperti ini
 
     tipe_data nama_array[jumlah_array];
 
-pendeklarasiannya mirip dengan variabel kan? yap array juga variabel, hanya saya bisa menampung data yang banyak tetapi memiliki tipe yang sama. lalu apa itu jumlah_array, jumlah_array maksudnya adalah jumlah seluruh data yang dapat ditampung oleh array, jika kita menggunakan analogi diatas dapat diartikan volume 1 sampai volume 7 adalah jumlah_array
+pendeklarasiannya mirip dengan variabel kan? yap array juga variabel, hanya saja bisa menampung data yang banyak, tetapi memiliki tipe yang sama. Lalu apa itu jumlah_array, jumlah_array maksudnya adalah jumlah seluruh data yang dapat ditampung oleh array, jika kita menggunakan analogi di atas dapat diartikan volume 1 sampai volume 7 adalah jumlah_array
 
 contoh program menggunakan array
 
@@ -623,7 +640,7 @@ int main(){
 ````
 
     
-outputnya
+outputnya:
 
 <img src="https://github.com/NurcahyaAri/Belajar-Cplusplus/blob/master/images/array1.png" alt="alt text" alt="If" title="Cara menggunakan array">
 
